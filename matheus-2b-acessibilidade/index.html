@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>IBRAS Automobilismo</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="p-5 bg-dark text-white">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <h1 class="h3 fw-bold">IBRAS Automobilismo</h1>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+      </ul>
+
+      <!-- Botão de acessibilidade -->
+      <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-warning fw-bold" aria-expanded="false">Acessibilidade</button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista mt-2">
+          <button id="aumentar-fonte" class="btn btn-secondary fw-bold" aria-label="Aumentar fonte">A+</button>
+          <button id="diminuir-fonte" class="btn btn-secondary fw-bold" aria-label="Diminuir fonte">A-</button>
+          <button id="alterna-contraste" class="btn btn-secondary fw-bold" aria-label="Alternar contraste">
+            <i class="bi bi-shadows"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <!-- Seção de Boas-vindas -->
+    <section id="inicio" class="text-center my-5">
+      <h2 class="display-5 fw-bold">Bem-vindo à IBRAS Automobilismo</h2>
+      <p class="lead mt-3">
+        O automobilismo é mais do que uma modalidade esportiva: é uma paixão mundial que une tecnologia, velocidade e emoção. 
+        Ao longo da história, ele se consolidou como um dos esportes mais acompanhados do planeta, despertando admiração e incentivando inovações que impactam diretamente a vida das pessoas fora das pistas.
+      </p>
+      <a href="#sobre" class="btn btn-primary btn-lg mt-4">Saiba mais</a>
+    </section>
+
+    <!-- Seção Sobre o Automobilismo -->
+    <section id="sobre" class="my-5" tabindex="0" aria-label="Seção sobre o automobilismo">
+      <h2 class="fw-bold">A importância do automobilismo</h2>
+      <p class="mt-3">
+        O automobilismo tem papel fundamental no avanço tecnológico, pois muitas das inovações criadas nas pistas chegam aos veículos que usamos no dia a dia, como sistemas de segurança, aerodinâmica e eficiência energética. 
+        Além disso, o esporte inspira milhões de pessoas, promovendo valores como disciplina, coragem, trabalho em equipe e superação de limites.
+      </p>
+      <p>
+        Para os apaixonados por velocidade, acompanhar corridas é mais do que entretenimento: é vivenciar momentos históricos, admirar a habilidade dos pilotos e entender como a engenharia automotiva transforma sonhos em realidade. 
+        Na <strong>IBRAS Automobilismo</strong>, celebramos essa paixão e buscamos aproximar ainda mais os fãs desse universo emocionante.
+      </p>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="my-5">
+      <div class="container p-5 d-flex justify-content-center">
+        <div class="col-md-8 col-lg-10 rounded-5 formulario">
+          <h2 class="mb-3">Entre em contato</h2>
+          <form>
+            <div class="form-group mb-3">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                placeholder="Digite seu nome completo">
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                placeholder="Digite seu email">
+            </div>
+            <div class="form-group mb-3">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center p-3 fst-italic bg-dark text-white">
+    <p>Acesse nossas redes:</p>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-tiktok"></i>
+    <p class="mt-3">Desenvolvido por IBRAS Automobilismo. Projeto fictício sem fins comerciais.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
